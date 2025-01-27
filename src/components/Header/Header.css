@@ -1,0 +1,94 @@
+.header {
+    background-color: #1C4670;
+    position: sticky;
+    padding: 8px;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 16px;
+}
+
+.header-content {
+    font-size: 14px;
+    padding-right: 16px;
+    border-right: 1px solid gray;
+    display: flex;
+    color: white;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.mail-link {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 17px;
+    width: 17px;
+}
+
+.header-social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding-right: 40px;
+}
+
+/* Wrapper for Alignment */
+.header-container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        padding: 16px;
+    }
+
+    .header-content {
+        padding-right: 0;
+        border-right: none;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .header-social-icons {
+        padding-right: 0;
+        justify-content: flex-start;
+        gap: 16px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .header-container {
+        gap: 12px;
+    }
+
+    .header-content {
+        font-size: 12px;
+        gap: 6px;
+    }
+
+    .header-social-icons {
+        gap: 8px;
+    }
+}

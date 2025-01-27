@@ -1,0 +1,180 @@
+.hero-page {
+    background-image: url('../../../public/images/poster.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 60px;
+}
+
+
+.hero-rating {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.hero-rating__label {
+    color: #181617;
+    font-weight: 700;
+    font-size: 14px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.hero-rating__icon {
+    color: #ffc51c;
+}
+
+.hero-rating__stars {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.hero-rating__star {
+    background-color: #ffc51c;
+    padding: 2px;
+    width: fit-content;
+    height: auto;
+}
+
+.hero-rating__star-icon {
+    color: white;
+}
+
+
+.hero-heading {
+    font-weight: 500;
+    font-size: 49px;
+    width: 50vw;
+    margin-top: 12px;
+}
+
+/* Divider */
+.hero-divider {
+    margin: 20px 0px;
+}
+
+.hero-divider--red {
+    border-bottom: 2px solid red;
+    width: 5vw;
+}
+
+/* Hero Description */
+.hero-description {
+    font-weight: 400;
+    font-size: 20px;
+    width: 50vw;
+    color: #4f4f4f;
+}
+
+/* Numbers Section */
+.hero-numbers {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin: 25px 0px;
+}
+
+.hero-numbers__item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero-numbers__icon {
+    color: #4f4f4f;
+}
+
+.hero-numbers__text {
+    background: linear-gradient(to bottom, #ffa229, #1c4670);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.hero-numbers__description {
+    font-weight: 400;
+    font-size: 14px;
+    color: #4f4f4f;
+}
+
+
+.hero-actions {
+    display: flex;
+    justify-content: flex-start; /* Aligns everything to the left */
+    align-items: center; /* Centers items vertically */
+    gap: 20px; /* Space between the button and the "See how it works" section */
+}
+
+.hero-actions__button {
+    background-color: #1c4670;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 10px 20px;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    border: none;
+}
+
+.hero-actions__video {
+    display: flex; /* Makes the icon and text inside it flex */
+    align-items: center; /* Centers the icon and text vertically */
+    gap: 8px; /* Adds space between the icon and text */
+}
+
+.hero-actions__video-icon {
+    color: red; /* Set the color for the icon */
+}
+
+.hero-actions__video-label {
+    margin: 0; /* Remove default margin */
+}
+
+
+
+
+.hero-actions__video-icon {
+    color: red;
+}
+
+.hero-actions__video-label {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-page {
+        padding: 30px;
+    }
+
+    .hero-heading {
+        font-size: 36px;
+        width: 100%;
+    }
+
+    .hero-description {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .hero-numbers {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero-actions__button {
+        width: 100%;
+        text-align: center;
+    }
+}

@@ -1,0 +1,55 @@
+.clients-section-container {
+    padding: 40px 0px; 
+    text-align: center;
+    overflow-x: hidden; 
+}
+
+.clients-section-heading {
+    color: #3C2109;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.clients-section-description {
+    color: #666666;
+    font-size: 16px;
+    margin: 20px 20%;
+   
+}
+
+.clients-image {
+    width: 100%; 
+    margin-top: 20px;
+    height: auto;
+    object-fit: cover; 
+}
+
+.clients-show-more-link {
+    font-weight: 600;
+    font-size: 15px;
+    margin-top: 20px;
+    color: #1C4670;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px; 
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for link */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .clients-section-heading {
+        font-size: 28px; /* Smaller heading font size for mobile */
+    }
+
+    .clients-section-description {
+        font-size: 14px;
+    }
+
+    .clients-show-more-link {
+        font-size: 14px; 
+    }
+}

@@ -1,0 +1,58 @@
+.email-section {
+    background: linear-gradient(to right, #ffa229, #1c4670);
+    padding: 40px;
+}
+
+.email-section-heading {
+    font-weight: 600;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+}
+
+.email-section-subheading {
+    font-weight: 700;
+    font-size: 32px;
+    color: white;
+    text-align: center;
+}
+
+.email-input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.email-input {
+    background-color: white;
+    padding: 10px;
+    border: none;
+    width: 30%;
+}
+
+.submit-button {
+    background-color: #FFA229;
+    padding: 8px;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.email-benefits {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.benefit-point {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+}

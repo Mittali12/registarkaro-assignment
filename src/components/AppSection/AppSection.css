@@ -1,0 +1,184 @@
+.app-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    background-color: #1C4670;
+    position: relative;
+    flex-wrap: wrap; 
+}
+
+.app-content {
+    padding: 50px;
+    flex: 1; 
+    min-width: 300px; 
+}
+
+.app-heading {
+    font-weight: 800;
+    font-size: 32px;
+    color: white;
+}
+
+.app-desc {
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: 400;
+    color: #AAB5CD;
+}
+
+.app-info {
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    margin-top: 40px;
+}
+
+.apps-logo {
+    display: flex;
+    margin-top: 15px;
+    gap: 20px;
+    flex-wrap: wrap; 
+    justify-content: flex-start; 
+}
+
+.app-store-logo {
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+;
+
+}
+
+.app-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.app-desc-info {
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.app-name {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.app-phones {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    flex-wrap: wrap; 
+    gap: 20px; 
+}
+
+.phone-img {
+    width: 280px;
+    height: 340px;
+    object-fit: cover;
+    object-position: 0% 40%;
+    position: relative;
+    align-self: flex-end;
+}
+
+.small-phone-img {
+    width: 280px;
+    height: 220px;
+    margin-right: -50px;
+    object-fit: cover;
+    object-position: 10% 10%;
+    position: relative;
+    align-self: flex-end;
+}
+
+@media (max-width: 768px) {
+    .app-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .app-content {
+        padding: 20px;
+        min-width: unset;
+    }
+
+    .app-heading {
+        font-size: 28px;
+    }
+
+    .app-desc {
+        font-size: 14px;
+    }
+
+    .app-info {
+        font-size: 14px;
+    }
+
+    .apps-logo {
+        gap: 10px;
+        justify-content: center; 
+    }
+
+    .phone-img {
+        width: 220px;
+        height: 280px;
+        object-position: 0% 50%; 
+    }
+
+    .small-phone-img {
+        width: 220px;
+        height: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .app-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .app-content {
+        padding: 15px;
+        text-align: center; 
+    }
+
+    .app-heading {
+        font-size: 24px;
+    }
+
+    .app-desc {
+        font-size: 14px;
+    }
+
+    .app-info {
+        font-size: 14px;
+    }
+
+    .apps-logo {
+        flex-direction: column; 
+        gap: 15px;
+    }
+
+    .app-store-logo {
+        width: 100%;
+        justify-content: center;
+        padding: 15px;
+    }
+
+    .phone-img {
+        width: 200px;
+        height: 260px;
+        object-position: 0% 50%; 
+    }
+
+    .small-phone-img {
+        width: 200px;
+        height: 160px;
+    }
+}

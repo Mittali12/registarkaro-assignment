@@ -1,0 +1,60 @@
+.steps-container {
+    background-color: #FFA229;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.step-item {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.step-item p {
+    font-weight: 600;
+    font-size: 18px;
+    color: #3C2109;
+}
+
+.step-icon-container {
+    padding: 8px 10px;
+    border-radius: 50%;
+}
+
+.step-icon-container-red {
+    background-color: #EB5757;
+}
+
+.step-icon-container-green {
+    background-color: #27AE60;
+}
+
+.step-icon-container-brown {
+    background-color: #F2994A;
+}
+
+.step-icon-container-gray {
+    background-color: #828282;
+}
+
+
+.step-icon {
+    height: 24px;
+    width: 24px;
+}
+
+
+@media (max-width: 768px) {
+    .steps-container {
+        flex-direction: column; 
+        gap: 20px;
+    }
+
+    .step-item p {
+        font-size: 16px; 
+    }
+}

@@ -1,0 +1,85 @@
+/* Container Styles */
+.numbers {
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .numbers-heading {
+    color: #EB8D15;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  
+  .numbers-subheading {
+    font-weight: 700;
+    font-size: 32px;
+    color: #3C2109;
+    margin-bottom: 20px;
+  }
+  
+  
+  .numbers-list {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    gap: 50px;
+  }
+  
+  .numbers-item {
+    text-align: center;
+  }
+  
+  /* Text Gradient */
+  .main-number {
+    font-weight: 800;
+    font-size: 42px;
+    background: linear-gradient(to bottom, #ffa229, #1c4670);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .number-title {
+    color: #181617;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .numbers-list {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .main-number {
+      font-size: 32px;
+    }
+  
+    .number-title {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .numbers {
+      padding: 20px;
+    }
+  
+    .numbers-heading {
+      font-size: 12px;
+    }
+  
+    .numbers-subheading {
+      font-size: 24px;
+    }
+  
+    .main-number {
+      font-size: 28px;
+    }
+  
+    .number-title {
+      font-size: 12px;
+    }
+  }
+  

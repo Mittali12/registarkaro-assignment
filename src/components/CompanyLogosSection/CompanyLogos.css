@@ -1,0 +1,48 @@
+.company-logos {
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+       align-items: center;
+    gap: 20px; 
+  }
+  
+  .company-logo-image {
+    width: 134px;
+    height: auto;
+    transition: transform 0.3s ease-in-out; 
+  }
+  
+  .company-logo-image:hover {
+    transform: scale(1.1); 
+  }
+  
+
+  @media (max-width: 1024px) {
+    .company-logo-image {
+      width: 100px; 
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .company-logos {
+      gap: 15px; 
+    }
+  
+    .company-logo-image {
+      width: 80px; 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .company-logos {
+      flex-direction: column; 
+      gap: 10px; 
+      padding: 20px;
+    }
+  
+    .company-logo-image {
+      width: 60px; 
+    }
+  }
+  

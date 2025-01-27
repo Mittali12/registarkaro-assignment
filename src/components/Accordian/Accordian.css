@@ -1,0 +1,87 @@
+.accordian {
+    padding: 0px 40px 40px 40px;
+}
+
+.accordian-heading {
+    color: #EB8D15;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+}
+
+.accordian-sunHeading {
+    color: #3C2109;
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.acccordian-content {
+    margin-top: 40px;
+}
+
+.accordian-item {
+    margin-top: 10px;
+    border-left: 5px solid;
+    border-image: linear-gradient(to bottom, #ffa229, #1c4670) 1;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.accordian-question {
+    color: #0D1216;
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.accordian-answer {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #5C5C5C;
+    display: block;
+}
+
+button {
+    align-content: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+}
+
+@media (max-width: 768px) {
+    .accordian {
+        padding: 0px 20px 20px 20px;
+    }
+
+    .accordian-heading {
+        font-size: 12px;
+    }
+
+    .accordian-sunHeading {
+        font-size: 28px;
+    }
+
+    .accordian-item {
+        padding: 10px;
+    }
+
+    .accordian-question {
+        font-size: 14px;
+    }
+
+    .accordian-answer {
+        font-size: 12px;
+    }
+}
