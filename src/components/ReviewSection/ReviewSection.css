@@ -1,0 +1,123 @@
+.review-container {
+    padding: 40px;
+    background-color: #1C4670;
+
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.arrows-container {
+    display: flex;
+    gap: 10px;
+
+}
+
+.custom-prev {
+    cursor: pointer;
+    font-size: 24px;
+    color: #1478F1;
+    padding: 8px 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.custom-next {
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+    padding: 8px 10px;
+    background-color: orange;
+    border-radius: 50%;
+}
+
+.heading {
+    color: white;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.testimonial-section {
+    padding-left: -40px;
+    padding-right: -40px;
+}
+
+.review-box {
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 20px;
+
+}
+
+.testimonial-rating {
+    color: #FFC226;
+    font-size: 25px;
+}
+
+.review-rating {
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonal-text {
+    margin-top: 20px;
+    color: #667085;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.testimonial-profile {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.testimonial-profile {
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.testimonial-profile h5 {
+    color: #3C2109;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.testimonial-profile p {
+    color: #282728;
+    font-size: 12px;
+
+}
+
+.slick-slide {
+    padding: 10px;
+   
+}
+
+/* Ensure dots are placed below the slider */
+.slick-dots {
+    color: white;
+    position: relative;
+   
+    margin-top: 10px;
+   
+}
+
+.slick-dots li button:before {
+    color: white !important;
+    opacity: 0.5 !important; 
+  }
+  
+
+  .slick-dots li.slick-active button:before {
+    color: white !important; 
+    opacity: 1 !important;
+  }
+  
+  

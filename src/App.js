@@ -14,6 +14,7 @@ import { HeroPage } from './components/HeroPage';
 import { LogosSection } from './components/LogosSection';
 import { Navbar } from './components/Navbar';
 import { NumbersSection } from './components/NumbersSection';
+import { ReviewSection } from './components/ReviewSection';
 import { ServicesSection } from './components/ServicesSection';
 import StepsSection from './components/StepsSection/StepsSection';
 import { VideoSection } from './components/VideoSection';
@@ -35,6 +36,7 @@ function App() {
       <ClientSection />
       <StepsSection />
       <BlogsSection />
+      <ReviewSection />
       <Accordian />
       <AppSection />
       <NumbersSection />

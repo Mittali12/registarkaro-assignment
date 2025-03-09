@@ -1,17 +1,35 @@
-.video-section-container{
+.video-section-container {
     padding: 40px;
     background-color: #1C4670;
+    width: 100%;
     display: flex;
-    gap: 20px;
+    gap: 40px;  /* Increased for better spacing */
     justify-content: space-between;
     align-items: center;
 }
 
-.video-content h1 {
+.video-text-content {
+    flex: 1;  /* Ensures text section takes equal space */
+}
+
+.video-frame-container {
+    flex: 1;  /* Ensures video section takes equal space */
+    display: flex;
+    justify-content: center;
+}
+
+.video-play {
+    border-radius: 10px;
+    width: 100%;
+    max-width: 560px;  /* Restricting max width */
+    height: 315px;     /* Fixed height */
+}
+
+
+.video-text-content h1 {
     font-weight: 700;
     font-size: 34px;
     color: white;
-    margin-bottom: 20px;
 }
 
 .video-description {
@@ -20,6 +38,7 @@
     font-size: 16px;
     font-weight: 400;
 }
+
 
 .video-idea {
     display: flex;
@@ -34,24 +53,44 @@
     border-radius: 50%;
 }
 
-.video-content h3 {
+.video-idea h3 {
     font-weight: 700;
     font-size: 22px;
     color: white;
 }
 
-.video-content p{
+.video-idea p{
  font-size: 16px;
  font-weight: 400;
  color: #AAB5CD;
 margin-top: 5px;
 }
 
-@media (max-width: 768px) {
+.video-play{
+    width: 50vw;
+}
+
+
+@media (max-width: 768px ) {
     .video-section-container {
         flex-direction: column;
-
+        gap: 20px;
     }
+
+    .video-frame-container {
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .video-play {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        aspect-ratio: 16/9;  /* Maintain video aspect ratio */
+    }
+
 
     .video-idea-container {
         flex-direction: column;
@@ -65,9 +104,41 @@ margin-top: 5px;
         margin:  0;
         font-size: 16px;
     }
-    .video-img{
-        height: 250px;
-        width: auto;
-        margin: 20px;
+ 
+}
+
+@media (max-width: 1028px ) {
+    .video-section-container {
+        flex-direction: column;
+        gap: 20px;
     }
+
+    .video-frame-container {
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .video-play {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        aspect-ratio: 16/9; 
+    }
+
+
+    .video-idea-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .video-content h1{
+      font-size: 16px;
+    }
+
+    .video-description  h3{
+        margin:  0;
+        font-size: 16px;
+    }
+    
 }
